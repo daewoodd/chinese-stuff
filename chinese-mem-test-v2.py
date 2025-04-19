@@ -50,7 +50,7 @@ vocabulary = {
     "Teacher": {"pinyin": "lǎo shī", "char": "老师"},
     "Student": {"pinyin": "xué shēng", "char": None},
     "People/person/human": {"pinyin": "rén", "char": "人"},
-    "Friend": {"pinyin": "péng you", "char": "朋友"},
+    "Friend": {"pinyin": "péng yǒu", "char": "朋友"},
     "Study partner / classmate": {"pinyin": "tóng xué", "char": None},
     
     # Language and learning
@@ -109,7 +109,7 @@ vocabulary = {
     # New
     "School": {"pinyin": "xué xiào", "char": None},
     "Look/Read/Watch": {"pinyin": "kàn", "char": None},
-    "Study a book": {"pinyin": "kàn shū", "char": None},
+    "Study a book": {"pinyin": "kàn shū", "char": "-- 书"},
     "Would like/want to": {"pinyin": "xiǎng", "char": None},
     "To drink": {"pinyin": "hē", "char": None},
     "Tea": {"pinyin": "chá", "char": None},
@@ -128,17 +128,20 @@ vocabulary = {
 def display_flashcards(mode):
     items = list(vocabulary.items())
     random.shuffle(items)
-    
+    i = 0
+
     for english, data in items:
         pinyin = data["pinyin"]
         char = data["char"]
         
         if mode == 1 and char is not None:  # Character -> Pinyin/English
+            print(f"[{i + 1}/{len([item for item in items if item[1]['char'] is not None])}]")
             input(f"Character: {char}\nPress Enter to see translation...")
             print(f"Pinyin: {pinyin}\nEnglish: {english}\n")
             input("Press Enter to continue...")
             print("\n" + "="*50 + "\n")
         elif mode == 2:  # English -> Pinyin/Character
+            print(f"[{i + 1}/{len(items)}]")
             input(f"English: {english}\nPress Enter to see translation...")
             print(f"Pinyin: {pinyin}")
             if char is not None:
@@ -148,6 +151,7 @@ def display_flashcards(mode):
             input("\nPress Enter to continue...")
             print("\n" + "="*50 + "\n")
         elif mode == 3:  # Pinyin -> English/Character
+            print(f"[{i + 1}/{len(items)}]")
             input(f"Pinyin: {pinyin}\nPress Enter to see translation...")
             print(f"English: {english}")
             if char is not None:
@@ -156,6 +160,8 @@ def display_flashcards(mode):
                 print("(Character not included in syllabus.)")
             input("\nPress Enter to continue...")
             print("\n" + "="*50 + "\n")
+        
+        i += 1
 
 def quiz():
     print("Chinese Vocabulary Flashcards")
