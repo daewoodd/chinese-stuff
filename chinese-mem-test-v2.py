@@ -10,8 +10,8 @@ vocabulary = {
     "To thank": {"pinyin": "xiè xie", "char": None},
     "Thank you": {"pinyin": "xiè xie nǐ", "char": None},
     "No thanks": {"pinyin": "bù xiè", "char": None},
-    "You're welcome": {"pinyin": "bù kè qi", "char": None},
-    "I'm sorry": {"pinyin": "duì bu qǐ", "char": None},
+    "You're welcome": {"pinyin": "bù kè qì", "char": None},
+    "I'm sorry": {"pinyin": "duì bù qǐ", "char": None},
     "Does not matter (as a reply to I'm sorry)": {"pinyin": "méi guān xi", "char": None},
     
     # Pronouns
