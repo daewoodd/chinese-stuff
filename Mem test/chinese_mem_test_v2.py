@@ -3,7 +3,7 @@ from collections import defaultdict
 from vocab.after_mids_vocab import after_vocabulary
 from vocab.before_mids_vocab import before_vocabulary
 
-vocabulary = after_vocabulary # change this to b4 or after
+vocabulary = before_vocabulary # change this to b4 or after
 
 def display_flashcards(mode):
     items = list(vocabulary.items()) 

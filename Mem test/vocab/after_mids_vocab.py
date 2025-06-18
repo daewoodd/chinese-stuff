@@ -14,7 +14,7 @@ after_vocabulary = {
   "Minutes (w/ diǎn)": {"pinyin": "fēn", "char": "分"},
   "Minute (standalone)": {"pinyin": "fēn zhōng", "char": None},
   "What time?": {"pinyin": "jǐ diǎn", "char": None},
-  "What time? (general)": {"pinyin": "shén me shí hou", "char": None},
+  "What time? (general) -> When, broader timeframe": {"pinyin": "shén me shí hou", "char": None},
   "Now": {"pinyin": "xiàn zài", "char": None},
   "Time": {"pinyin": "shí hou", "char": None},
   "Noon": {"pinyin": "zhōng wǔ", "char": None},
@@ -32,8 +32,8 @@ after_vocabulary = {
   "Thing, stuff": {"pinyin": "dōng xī", "char": None},
   "Apple": {"pinyin": "píng guǒ", "char": None},
   "Car": {"pinyin": "chē", "char": "车"},
-  "Airplane": {"pinyin": "feī jī", "char": None},
-  "Taxi": {"pinyin": "chū zhū chē", "char": None},
+  "Airplane": {"pinyin": "fēi jī", "char": None},
+  "Taxi": {"pinyin": "chū zū chē", "char": None},
   "Clothes": {"pinyin": "yī fu", "char": None},
   "Water": {"pinyin": "shuǐ", "char": "水"},
   "Fruit": {"pinyin": "shuǐ guǒ", "char": "水果"},
@@ -112,7 +112,7 @@ after_vocabulary = {
   
   # Specific Actions
   "Visit doctor": {"pinyin": "kàn yī shēng", "char": None},
-  "Watch movie": {"pinyin": "kàn diǎn yǐng", "char": None},
+  "Watch movie": {"pinyin": "kàn diàn yǐng", "char": None},
   
   # Emotions and Preferences
   "Like": {"pinyin": "xǐ huān", "char": None},
